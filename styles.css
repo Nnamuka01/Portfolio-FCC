@@ -3,9 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-grey: #303841;
+}
 body {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.4;
+    color: var(--main-white);
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: var(--main-red);
+    z-index: 10;
+}
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+ul {
+    list-style-type: none;
+}
+.nav-list a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+h1, h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
 }
