@@ -7,12 +7,15 @@
     --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
-    --main-grey: #303841;
+    --main-gray: #303841;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     color: var(--main-white);
 }
@@ -43,6 +46,9 @@ a {
     text-decoration: none;
     color: var(--main-white);
 }
+.nav-list a:hover {
+    background: var(--main-blue);
+}
 #welcome-section {
     display: flex;
     justify-content: center;
@@ -58,4 +64,118 @@ h1, h2 {
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
+}
+h2 {
+    font-size: 4.2rem;
+}
+#welcome-section p {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+}
+#projects {
+    text-align: center;
+    padding: 8rem 2rem;
+    background: var(--main-blue);
+}
+.projects-header {
+    max-width: 640px;
+    margin: 0 auto 4rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.project-title {
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+.project-title:hover {
+    color: var(--main-white);
+}
+.project-title::after {
+    content: "/>";
+    color: var(--main-red);
+    position: relative;
+    display: none;
+}
+.project-title:hover::after {
+    display: inline-block;
+    padding-left: 5px;
+}
+.project-title::before {
+    content: "<";
+    color: var(--main-red);
+    position: relative;
+    display: none;
+}
+.project-title:hover::before {
+    display: inline-block;
+    padding-right: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+.btn-show-all {
+    background: var(--main-gray);
+    font-size: 1.5rem;
+    transition: background 0.3s ease-out;
+}
+.btn-show-all:hover {
+    background: var(--main-red);
+}
+.btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
 }
