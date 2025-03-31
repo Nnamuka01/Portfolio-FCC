@@ -15,7 +15,7 @@ html {
 body {
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     color: var(--main-white);
 }
@@ -40,7 +40,7 @@ ul {
 .nav-list a {
     display: block;
     padding: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 a {
     text-decoration: none;
@@ -61,15 +61,15 @@ a {
 }
 h1, h2 {
     font-family: Raleway, sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
 h2 {
-    font-size: 4.2rem;
+    font-size: 3.25rem;
 }
 #welcome-section p {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 200;
     font-style: italic;
     color: var(--main-red);
@@ -154,20 +154,49 @@ img {
     transform: translateX(0);
     transition: transform 0.3s ease-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    padding: 0 1.5rem;
+    background: var(--main-gray);
+}
+.contact-header > p {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 3rem;
+}
+.contact-links a {
+    transition: transform 0.3s ease-out;
+}
+.contact-links a:hover {
+    transform: translateY(5px);
+}
+.contact-details {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+footer {
+    display: flex;
+    font-weight: 300;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+}
 
 @media (max-width: 61.25em) {
     html {
